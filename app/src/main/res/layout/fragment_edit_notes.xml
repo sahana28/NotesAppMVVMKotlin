@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragments.EditNotesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title..."
+            android:id="@+id/editTitle"
+            android:padding="15dp"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:textColorHint="#D1D1D1"
+            android:background="@drawable/edit_txt_shape">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subtitle..."
+            android:id="@+id/editSubtitle"
+            android:padding="15dp"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:textColorHint="#D1D1D1"
+            android:background="@drawable/edit_txt_shape">
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/priorityGreen"
+                android:background="@drawable/green_dot"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/priorityYellow"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/yellow_dot"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/priorityRed"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/red_dot"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:hint="Notes..."
+            android:id="@+id/editNotes"
+            android:padding="15dp"
+            android:layout_marginTop="30dp"
+            android:gravity="start"
+            android:fontFamily="@font/regular"
+            android:textColorHint="#D1D1D1"
+            android:background="@drawable/edit_txt_shape">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEditSaveNotes"
+        android:layout_margin="26dp"
+        android:src="@drawable/baseline_done_24"
+        android:layout_gravity="bottom|right"
+        android:backgroundTint="@color/red_color" />
+
+
+</FrameLayout>

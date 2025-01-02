@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NotesAppMVVMKotlin" parent="Theme.AppCompat">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/red_color</item>
+        <item name="android:statusBarColor">@color/red_color</item>
+    </style>
+
+    <style name="Theme.NotesAppMVVMKotlin" parent="Base.Theme.NotesAppMVVMKotlin" />
+
+    <style name="progressBarStyle" >
+        <item name="colorSecondary">@color/red_color</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Modal</item>
+    </style>
+
+    <style name="Modal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/delete_sheet</item>
+    </style>
+</resources>
